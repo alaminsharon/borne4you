@@ -84,16 +84,26 @@
     }
 }
 
-.al-header-button-one {
+.al-header-button-one-main {
+    width: 164px;
+    height: 44px;
+    background: linear-gradient(to right, #0151FD, #A3C0FF, #241710);
+    display: inline-block;
+    border-radius: 90px;
+    padding: 2px;
+}
+
+.al-header-button-one-submain {
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
-    background-color: transparent;
-    border: 2px solid;
-    border-color: linear-gradient(to right, red, green, white);
+    background-color: black;
     color: var(--white-color);
     border-radius: 90px;
-    padding: 11px 10px 11px 14px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    
 
     i {
         color: var(--white-color);

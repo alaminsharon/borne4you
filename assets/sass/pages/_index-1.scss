@@ -141,6 +141,12 @@
     border-radius: 80px;
     font-size: 16px;
     font-weight: 600;
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-color: var(--primary-color);
+    }
 }
 
 .al-map-nav {
@@ -171,6 +177,11 @@
     font-size: 16px;
     font-weight: 600;
     color: #898989;
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
 
     @include portrait-phone {
         padding: 7px 30px;
@@ -181,6 +192,11 @@
     background-color: var(--white-color);
     border: 1px solid rgba(82, 82, 82, 0.12);
     color: var(--primary-color);
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
 }
 
 .map {
@@ -207,6 +223,14 @@
 /******Change Section Start*********/
 .al-change-section {
     padding: 0 0 90px 0;
+
+    @include screen-768 {
+        padding: 0 0 56px 0;
+    }
+
+    @include portrait-phone {
+        padding: 0 0 20px 0;
+    }
 }
 
 .al-change-title {
@@ -255,6 +279,11 @@
 .al-change-item {
     gap: 20px;
     margin-bottom: 20px;
+
+    @include portrait-phone {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 .al-change-item:last-child {
@@ -285,6 +314,10 @@
         line-height: 20px;
         display: inline-block;
         max-width: 415px;
+
+        @include portrait-phone {
+            font-size: 16px;
+        }
     }
 }
 
@@ -306,11 +339,23 @@
         padding: 16px 20px;
         font-size: 16px;
     }
+
+    transition: 0.3s;
+
+    &:hover {
+        background-color: var(--primary-color);
+        box-shadow: none;
+    }
 }
 
 .al-change-button-two {
     background-color: var(--primary-color);
     box-shadow: none;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: var(--secondary-color);
+    }
 }
 
 .al-change-thumb {
@@ -330,6 +375,14 @@
 /******About Section Start*********/
 .al-about-section {
     padding: 90px 0;
+
+    @include screen-768 {
+        padding: 56px 0;
+    }
+
+    @include portrait-phone {
+        padding: 20px 0;
+    }
 }
 
 .al-about-meta {
@@ -340,8 +393,20 @@
 
 .al-about-content {
     background-color: #1E2024;
-    padding: 110px 31px 110px 90px;
+    padding: 110px 31px 110px 70px;
     border-radius: 24px;
+
+    @include screen-1300 {
+        padding: 110px 30px 110px 30px;
+    }
+
+    @include screen-992 {
+        padding: 30px;
+    }
+
+    @include portrait-phone {
+        padding: 10px;
+    }
 }
 
 .al-about-title {
@@ -349,6 +414,19 @@
         line-height: 52px;
         max-width: 550px;
         color: var(--white-color);
+
+        @include large-screen {
+            font-size: 49px;
+        }
+
+        @include screen-992 {
+            max-width: 100%;
+        }
+
+        @include portrait-phone {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -360,6 +438,14 @@
         color: var(--white-color);
         margin-top: 10px;
         margin-bottom: 20px;
+
+        @include large-screen {
+            font-size: 16px;
+        }
+
+        @include screen-992 {
+            max-width: 100%;
+        }
     }
 }
 
@@ -370,6 +456,11 @@
 .al-about-item {
     gap: 20px;
     margin-bottom: 20px;
+
+    @include portrait-phone {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 .al-about-item:last-child {
@@ -401,11 +492,20 @@
         display: inline-block;
         max-width: 550px;
         color: var(--white-color);
+
+        @include portrait-phone {
+            font-size: 16px;
+        }
     }
 }
 
 .al-about-btn-group {
     gap: 12px;
+    display: flex;
+
+    @include screen-460 {
+        gap: 6px;
+    }
 }
 
 .al-about-button {
@@ -416,11 +516,30 @@
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--white-color);
     border-radius: 90px;
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+
+    @include large-screen {
+        padding: 18px 13px;
+        font-size: 16px;
+    }
+
+    @include screen-460 {
+        padding: 10px;
+        font-size: 14px;
+    }
 }
 
 .al-about-button-two {
     background-color: var(--secondary-color);
     box-shadow: inset 0px -6px 16.9px #5188FE;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: none;
+    }
 }
 
 .al-about-thumb {
@@ -428,6 +547,81 @@
     border-radius: 26px;
     text-align: center;
     padding: 80px 0 0 0;
+    margin-bottom: 10px;
+
+    @include portrait-phone {
+        padding: 30px 10px 0 10px;
+    }
+}
+
+.al-about-charge {
+    padding: 24px;
+    background: linear-gradient(99.49deg, #0151FD 0%, #5188FE 100%);
+    border: 0.4px solid #2D2D2D;
+    border-radius: 26px;
+}
+
+.al-about-charge-btn {
+    a {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 8px 12px;
+        background-color: var(--white-color);
+        color: var(--primary-color);
+        border-radius: 90px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+    }
+}
+
+.al-about-charge-title {
+    margin-top: 15px;
+    margin-bottom: 12px;
+
+    h4 {
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--white-color);
+    }
+}
+
+.al-about-charge-subtitle {
+    margin-bottom: 12px;
+
+    p {
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--white-color);
+    }
+}
+
+.al-about-charge-partir {
+    h5 {
+        font-weight: 500;
+        line-height: 52px;
+        color: var(--white-color);
+    }
+}
+
+.al-about-charge-number {
+    h2 {
+        font-weight: 500;
+        line-height: 40px;
+        color: var(--white-color);
+    }
 }
 
 /******About Section End*********/
+
+/******Faq Section Start*********/
+.al-faq-section {
+    padding: 90px 0 180px 0;
+}
+
+
+/******Faq Section End*********/
