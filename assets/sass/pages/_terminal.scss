@@ -1,0 +1,51 @@
+/******Terminal Page*********/
+
+/******Terminal Section Start*********/
+.al-terminal-section {
+    padding: 32px 0 106px 0;
+
+    @include screen-768 {
+        padding: 32px 0;
+    }
+}
+
+.al-terminal-content {
+    background: linear-gradient(0deg, #EDEDED, #EDEDED), linear-gradient(0deg, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16)), url(.png);
+    border-radius: 20px;
+    padding: 24px 43px;
+    @include large-screen {
+        padding: 20px;
+    }
+}
+
+.al-terminal-card {
+    background-color: var(--white-color);
+    padding: 24px 32px;
+    border-radius: 20px;
+}
+
+.al-terminal-card-title {
+    margin-bottom: 12px;
+    h5 {
+        font-weight: 600;
+        line-height: 20px;
+    }
+}
+
+.al-terminal-card-icon {
+    span {
+        i {
+            font-size: 10px;
+            color: var(--secondary-color);
+        }
+    }
+}
+
+.al-terminal-card-number-title {
+    h6 {
+        font-weight: 500;
+        line-height: 20px;
+        color: #000000;
+    }
+}
+/******Terminal Section End*********/

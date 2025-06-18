@@ -4,6 +4,13 @@
 .al-footer-section {
     background-color: #0D0D0D;
     padding: 99px 0 63px 0;
+
+    @include screen-768 {
+        padding: 60px 0 40px 0;
+    }
+    @include portrait-phone {
+        padding: 30px 0;
+    }
 }
 
 .al-footer-widget-title {
@@ -35,6 +42,8 @@
 .al-footer-form {
     form {
         position: relative;
+        max-width: 468px;
+        width: 100%;
 
         input {
             border-radius: 90px;
@@ -57,10 +66,25 @@
     right: 0;
     top: 0;
     border-radius: 90px;
+
+    @include portrait-phone {
+        padding: 16px 10px;
+        font-size: 14px;
+    }
 }
 
+.al-footer-newsletter-title {
+    margin-bottom: 20px;
+
+    h6 {
+        color: var(--white-color);
+        line-height: 40px;
+    }
+}
 
 .al-footer-social-title {
+    margin-bottom: 20px;
+
     h6 {
         color: var(--white-color);
         line-height: 40px;
@@ -70,13 +94,21 @@
 .al-footer-social {
     ul {
         gap: 20px;
+
         li {
             a {
                 i {
+                    font-size: 30px;
                     color: var(--white-color);
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
                 }
             }
         }
     }
 }
+
 /********* Footer Section End *********/
