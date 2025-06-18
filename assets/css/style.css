@@ -1099,4 +1099,85 @@ h6 {
   color: #000000; }
 
 /******Terminal Section End*********/
+/******Selection Page*********/
+/******Selection Section Start*********/
+.al-selection-section {
+  padding: 32px 0 106px 0; }
+  @media (max-width: 767.98px) {
+    .al-selection-section {
+      padding: 32px 0; } }
+
+.al-selection-content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#EDEDED), to(#EDEDED)), -webkit-gradient(linear, left bottom, left top, from(rgba(45, 45, 45, 0.16)), to(rgba(45, 45, 45, 0.16))), url(.png);
+  background: -webkit-linear-gradient(bottom, #EDEDED, #EDEDED), -webkit-linear-gradient(bottom, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16)), url(.png);
+  background: -o-linear-gradient(bottom, #EDEDED, #EDEDED), -o-linear-gradient(bottom, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16)), url(.png);
+  background: linear-gradient(0deg, #EDEDED, #EDEDED), linear-gradient(0deg, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16)), url(.png);
+  border-radius: 20px;
+  padding: 24px 110px 40px 110px; }
+  @media (max-width: 1199.98px) {
+    .al-selection-content {
+      padding: 20px; } }
+
+.al-selection-card {
+  background-color: var(--white-color);
+  border-radius: 24px;
+  padding: 8px 20px 8px 8px; }
+
+.al-selection-card-box {
+  width: 256px;
+  height: 206px;
+  background: #EDEDED;
+  border-radius: 16px; }
+
+.al-selection-card-title h6 {
+  font-weight: 600;
+  line-height: 20px; }
+
+.al-selection-card-icon span i {
+  font-size: 10px;
+  color: var(--secondary-color); }
+
+.al-selection-card-number-title {
+  margin-top: 12px;
+  margin-bottom: 16px; }
+  .al-selection-card-number-title span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #535353; }
+
+.al-selection-card-subtitle {
+  margin-bottom: 32px; }
+  .al-selection-card-subtitle p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #535353; }
+
+.al-selection-card-item-one {
+  padding: 10px;
+  background: #EDEDED;
+  border-radius: 12px; }
+
+.al-selection-card-btn a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 16px 31px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 90px;
+  display: inline-block;
+  -webkit-box-shadow: inset 0px -3px 10.5px #7A8BFE;
+  box-shadow: inset 0px -3px 10.5px #7A8BFE;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-selection-card-btn a:hover {
+    background-color: var(--primary-color); }
+  @media (max-width: 575.98px) {
+    .al-selection-card-btn a {
+      font-size: 16px;
+      padding: 16px 20px; } }
+
 /******** theme file **********/
