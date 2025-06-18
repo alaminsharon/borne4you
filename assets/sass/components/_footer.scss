@@ -1,1 +1,61 @@
 /********* Footer *********/
+
+/********* Footer Section Start *********/
+.al-footer-section {
+    background-color: #0D0D0D;
+    padding: 99px 0 63px 0;
+}
+
+.al-footer-widget-title {
+    h5 {
+        font-size: 24px;
+        line-height: 40px;
+        color: var(--white-color);
+        font-weight: 700;
+    }
+}
+
+.al-footer-widget-content {
+    li {
+        a {
+            font-size: 20px;
+            line-height: 50px;
+            color: var(--white-color);
+            text-decoration: underline;
+            font-weight: 500;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.al-footer-form {
+    form {
+        position: relative;
+
+        input {
+            border-radius: 90px;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+    }
+}
+
+.al-footer-form-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 16px 29px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 90px;
+}
+/********* Footer Section End *********/

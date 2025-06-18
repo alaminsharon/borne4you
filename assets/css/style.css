@@ -397,6 +397,51 @@ h6 {
   border-radius: 3px; }
 
 /********* Footer *********/
+/********* Footer Section Start *********/
+.al-footer-section {
+  background-color: #0D0D0D;
+  padding: 99px 0 63px 0; }
+
+.al-footer-widget-title h5 {
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--white-color);
+  font-weight: 700; }
+
+.al-footer-widget-content li a {
+  font-size: 20px;
+  line-height: 50px;
+  color: var(--white-color);
+  text-decoration: underline;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-footer-widget-content li a:hover {
+    color: var(--secondary-color); }
+
+.al-footer-form form {
+  position: relative; }
+  .al-footer-form form input {
+    border-radius: 90px;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    width: 100%; }
+
+.al-footer-form-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 16px 29px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 90px; }
+
+/********* Footer Section End *********/
 /******** pages file **********/
 /******Home Page*********/
 /******Hero Section Start*********/
@@ -918,6 +963,85 @@ h6 {
 /******Faq Section Start*********/
 .al-faq-section {
   padding: 90px 0 180px 0; }
+  @media (max-width: 767.98px) {
+    .al-faq-section {
+      padding: 56px 0; } }
+  @media (max-width: 575.98px) {
+    .al-faq-section {
+      padding: 30px 0; } }
+
+.al-faq-title h2 {
+  line-height: 52px; }
+  @media (max-width: 991.98px) {
+    .al-faq-title h2 {
+      font-size: 40px;
+      line-height: 40px; } }
+
+.al-faq-subtitle {
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  .al-faq-subtitle p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500; }
+
+.al-faq-accordion {
+  max-width: 680px;
+  margin: 0 auto; }
+  .al-faq-accordion .accordion-item {
+    border: none; }
+    .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 26px 29px 26px 25px;
+      background: #FBFBFB;
+      color: var(--primary-color);
+      outline: 0;
+      border-radius: 20px; }
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button::after {
+        content: "\f105";
+        font-family: "FontAwesome";
+        font-size: 24px;
+        background: transparent;
+        color: var(--primary-color);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+      @media (max-width: 575.98px) {
+        .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+          font-size: 18px; } }
+    .al-faq-accordion .accordion-item .accordion-header .accordion-button:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+      background: transparent;
+      color: var(--primary-color);
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .al-faq-accordion .accordion-item .accordion-body {
+      color: var(--primary-color);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px; }
+
+.al-faq-btn a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 16px 38px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-faq-btn a:hover {
+    background-color: var(--primary-color); }
+  @media (max-width: 575.98px) {
+    .al-faq-btn a {
+      font-size: 16px;
+      padding: 16px 20px; } }
 
 /******Faq Section End*********/
 /******** theme file **********/
