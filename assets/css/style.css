@@ -238,7 +238,8 @@ h6 {
   font-weight: 600;
   line-height: 22px;
   background-color: transparent;
-  border: 2px solid red;
+  border: 2px solid;
+  border-color: linear-gradient(to right, red, green, white);
   color: var(--white-color);
   border-radius: 90px;
   padding: 11px 10px 11px 14px; }
@@ -346,6 +347,21 @@ h6 {
     left: 0; }
 
 /******Header Home page *********/
+.gradient-border {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 5px solid transparent;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)), -webkit-gradient(linear, left top, right top, from(#0151FD), color-stop(52%, #A3C0FF), to(#241710));
+  background-image: -webkit-linear-gradient(#000, #000), -webkit-linear-gradient(left, #0151FD 0%, #A3C0FF 52%, #241710 100%);
+  background-image: -o-linear-gradient(#000, #000), -o-linear-gradient(left, #0151FD 0%, #A3C0FF 52%, #241710 100%);
+  background-image: linear-gradient(#000, #000), linear-gradient(90deg, #0151FD 0%, #A3C0FF 52%, #241710 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px; }
+
 .primary-btn {
   padding: 6px 24px;
   background: var(--secondary-color);
@@ -541,6 +557,16 @@ h6 {
 .al-change-title h2 {
   line-height: 52px;
   max-width: 550px; }
+  @media (max-width: 1100px) {
+    .al-change-title h2 {
+      font-size: 45px; } }
+  @media (max-width: 991.98px) {
+    .al-change-title h2 {
+      max-width: 100%; } }
+  @media (max-width: 575.98px) {
+    .al-change-title h2 {
+      font-size: 34px;
+      line-height: 40px; } }
 
 .al-change-subtitle p {
   font-size: 20px;
@@ -549,6 +575,12 @@ h6 {
   color: #535353;
   margin-top: 10px;
   margin-bottom: 20px; }
+  @media (max-width: 991.98px) {
+    .al-change-subtitle p {
+      max-width: 100%; } }
+  @media (max-width: 575.98px) {
+    .al-change-subtitle p {
+      font-size: 19px; } }
 
 .al-change-card {
   margin-bottom: 20px; }
@@ -581,7 +613,9 @@ h6 {
 .al-change-item-content span {
   font-size: 20px;
   font-weight: 500;
-  line-height: 20px; }
+  line-height: 20px;
+  display: inline-block;
+  max-width: 415px; }
 
 .al-change-btn-group {
   gap: 12px; }
@@ -596,6 +630,10 @@ h6 {
   border-radius: 90px;
   -webkit-box-shadow: inset 0px -3px 10.5px #7A8BFE;
   box-shadow: inset 0px -3px 10.5px #7A8BFE; }
+  @media (max-width: 575.98px) {
+    .al-change-button {
+      padding: 16px 20px;
+      font-size: 16px; } }
 
 .al-change-button-two {
   background-color: var(--primary-color);
@@ -605,6 +643,12 @@ h6 {
 .al-change-thumb img {
   min-height: 633px;
   height: 100px; }
+  @media (max-width: 991.98px) {
+    .al-change-thumb img {
+      width: 100%;
+      min-height: 500px; } }
 
 /******Change Section End*********/
+/******About Section Start*********/
+/******About Section End*********/
 /******** theme file **********/

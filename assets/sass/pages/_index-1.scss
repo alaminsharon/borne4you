@@ -206,6 +206,16 @@
     h2 {
         line-height: 52px;
         max-width: 550px;
+        @include screen-1100 {
+            font-size: 45px;
+        }
+        @include screen-992 {
+            max-width: 100%;
+        }
+        @include portrait-phone {
+            font-size: 34px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -217,6 +227,12 @@
         color: #535353;
         margin-top: 10px;
         margin-bottom: 20px;
+        @include screen-992 {
+            max-width: 100%;
+        }
+        @include portrait-phone {
+            font-size: 19px;
+        }
     }
 }
 
@@ -255,6 +271,8 @@
         font-size: 20px;
         font-weight: 500;
         line-height: 20px;
+        display: inline-block;
+        max-width: 415px;
     }
 }
 
@@ -271,6 +289,10 @@
     color: var(--white-color);
     border-radius: 90px;
     box-shadow: inset 0px -3px 10.5px #7A8BFE;
+    @include portrait-phone {
+        padding: 16px 20px;
+        font-size: 16px;
+    }
 }
 
 .al-change-button-two {
@@ -282,6 +304,14 @@
     img {
         min-height: 633px;
         height: 100px;
+        @include screen-992 {
+            width: 100%;
+            min-height: 500px;
+        }
     }
 }
 /******Change Section End*********/
+
+/******About Section Start*********/
+
+/******About Section End*********/
