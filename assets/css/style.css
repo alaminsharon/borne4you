@@ -32,8 +32,13 @@ img {
   margin: auto;
   padding: 0 12px; }
 
+.container-1344 {
+  max-width: 1368px;
+  margin: auto;
+  padding: 0 12px; }
+
 .container-1408 {
-  max-width: 1432px;
+  max-width: 1368px;
   margin: auto;
   padding: 0 12px; }
 
@@ -650,5 +655,93 @@ h6 {
 
 /******Change Section End*********/
 /******About Section Start*********/
+.al-about-section {
+  padding: 90px 0; }
+
+.al-about-meta {
+  background-color: #0D0D0D;
+  padding: 8px;
+  border-radius: 34px; }
+
+.al-about-content {
+  background-color: #1E2024;
+  padding: 110px 31px 110px 90px;
+  border-radius: 24px; }
+
+.al-about-title h2 {
+  line-height: 52px;
+  max-width: 550px;
+  color: var(--white-color); }
+
+.al-about-subtitle p {
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 550px;
+  color: var(--white-color);
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.al-about-card {
+  margin-bottom: 20px; }
+
+.al-about-item {
+  gap: 20px;
+  margin-bottom: 20px; }
+
+.al-about-item:last-child {
+  margin-bottom: 0; }
+
+.al-about-item-icon span {
+  width: 24px;
+  height: 24px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .al-about-item-icon span i {
+    font-size: 12px; }
+
+.al-about-item-content span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  display: inline-block;
+  max-width: 550px;
+  color: var(--white-color); }
+
+.al-about-btn-group {
+  gap: 12px; }
+
+.al-about-button {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 18px 34px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white-color);
+  border-radius: 90px; }
+
+.al-about-button-two {
+  background-color: var(--secondary-color);
+  -webkit-box-shadow: inset 0px -6px 16.9px #5188FE;
+  box-shadow: inset 0px -6px 16.9px #5188FE; }
+
+.al-about-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#121827), to(rgba(41, 49, 233, 0.2)));
+  background: -webkit-linear-gradient(top, #121827 0%, rgba(41, 49, 233, 0.2) 100%);
+  background: -o-linear-gradient(top, #121827 0%, rgba(41, 49, 233, 0.2) 100%);
+  background: linear-gradient(180deg, #121827 0%, rgba(41, 49, 233, 0.2) 100%);
+  border-radius: 26px;
+  text-align: center;
+  padding: 80px 0 0 0; }
+
 /******About Section End*********/
 /******** theme file **********/
