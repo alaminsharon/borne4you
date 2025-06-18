@@ -1,0 +1,221 @@
+/******Header Start*********/
+
+/******Header Section Start*********/
+.al-header-section {
+    padding: 40px 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    @include screen-1400 {
+        padding: 40px 4px;
+    }
+}
+
+.al-header-nav {
+    &>ul {
+        display: flex;
+        gap: 8px;
+
+        &>li {
+            z-index: 20;
+            position: relative;
+
+            &.has-submenu {
+                &::after {
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    position: absolute;
+                    font-size: 15px;
+                    color: var(--white-color);
+                    right: -6px;
+                    top: 1px;
+                }
+            }
+
+            a {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                display: inline-block;
+                color: var(--white-color);
+                padding: 0 10px;
+                transition: 0.3s;
+            }
+
+            .submenu-wrapper {
+                position: absolute;
+                right: -72px;
+                min-width: 208px;
+                display: block;
+                background: var(--white-color);
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                padding-left: 0;
+                border-radius: 6px;
+
+                li {
+                    a {
+                        min-width: 208px;
+                        padding: 8px 16px;
+                        background-color: transparent;
+                        color: var(--primary-color);
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: var(--header-submenu-color);
+                            color: var(--nature-300);
+                        }
+                    }
+                }
+            }
+
+            &:hover .submenu-wrapper {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.al-header-button-one {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid red;
+    color: var(--white-color);
+    border-radius: 90px;
+    padding: 11px 10px 11px 14px;
+
+    i {
+        color: var(--white-color);
+        margin-right: 4px;
+    }
+
+    @include screen-1260 {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+.al-header-button-two {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    box-shadow: inset 0px -3px 10.5px #7A8BFE;
+    border-radius: 60px;
+    padding: 13px 12px 13px 14px;
+    margin-left: 14px;
+
+    span {
+        width: 24px;
+        height: 24px;
+        background-color: var(--white-color);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: var(--secondary-color);
+        margin-left: 4px;
+    }
+
+    @include screen-1260 {
+        padding: 8px 10px;
+        font-size: 13px;
+        margin-left: 8px;
+    }
+}
+
+.mobile-toggle {
+    .header_toggle_btn {
+        span {
+            width: 32px;
+            height: 2px;
+            display: block;
+            background: var(--white-color);
+
+            +span {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+/******Header Section End*********/
+
+
+/************************ mobile menu start ****************/
+.mobile-menu {
+    width: 400px;
+    @include portrait-phone {
+        width: 220px;
+    }
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -410px;
+    background-color: var(--white-color);
+    z-index: 60;
+    padding: 18px 24px;
+    overflow-y: scroll;
+    transition: 0.3s;
+
+    .close {
+        position: absolute;
+        right: 37px;
+        top: 20px;
+        color: var(--primary-color);
+    }
+
+    .mobile-nav-menu {
+        margin-top: 20px;
+
+        li {
+            +li {
+                border-top: 1px solid #E8E8E8;
+            }
+
+            a {
+                display: inline-block;
+                color: var(--primary-color);
+                padding: 15px 0;
+            }
+
+            &.has-submenu {
+                position: relative;
+
+                &>i {
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    padding: 8px;
+                    transition: 0.3s;
+
+                    &.icon-rotate {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &>.submenu-wrapper {
+                    padding-left: 15px;
+                    display: none;
+                    transition: initial;
+                }
+            }
+        }
+    }
+
+    &.active {
+        left: 0;
+    }
+}
+
+/******Header Home page *********/

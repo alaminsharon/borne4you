@@ -1,0 +1,149 @@
+/******Home Page*********/
+
+/******Hero Section Start*********/
+.al-hero-section {
+    position: relative;
+    margin-top: -95px;
+    @include screen-1400 {
+        margin-top: -100px;
+    }
+}
+
+.al-hero-content {
+    background: linear-gradient(180deg, #020817 0%, #0B2B7D 100%);
+    padding: 120px 0 75px 0;
+    border-radius: 24px;
+    text-align: center;
+    @include screen-1400 {
+        padding: 120px 120px 75px 120px;
+    }
+    @include large-screen {
+        padding: 120px 60px 75px 60px;
+    }
+    @include screen-768 {
+        padding: 100px 10px 40px 10px;
+    }
+}
+
+.al-hero-title {
+    h1 {
+        max-width: 928px;
+        margin: 0 auto;
+        color: var(--white-color);
+        line-height: 58px;
+        @include large-screen {
+            font-size: 47px;
+        }
+        @include portrait-phone {
+            font-size: 31px;
+            line-height: 38px;
+        }
+    }
+}
+
+.al-hero-subtitle {
+    margin-top: 24px;
+    margin-bottom: 28px;
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        max-width: 711px;
+        margin: 0 auto;
+        color: var(--white-color);
+        @include screen-768 {
+            font-size: 16px;
+        }
+    }
+}
+
+.al-hero-form {
+    form {
+        position: relative;
+        max-width: 833px;
+        width: 100%;
+        margin: 0 auto;
+
+        input {
+            border-radius: 90px;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            width: 100%;
+            @include portrait-phone {
+                padding: 12px;
+            }
+        }
+    }
+}
+
+.al-hero-form-btn {
+    padding: 12px 30px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 90px;
+    @include portrait-phone {
+        padding: 12px 10px;
+    }
+}
+
+/******Hero Section End*********/
+
+/******Map Section Start*********/
+.al-map-section {
+    padding: 32px 0 106px 0;
+}
+
+.al-map-button {
+    padding: 20px;
+    border: 1px solid #D1D1D1;
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: 80px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.al-map-nav {
+  display: flex;
+  background-color: rgba(187, 187, 187, 0.12);
+  border-radius: 60px;
+  padding: 4px;
+  max-width: 523px;
+  width: 100%;
+}
+
+.al-map-nav-btn {
+  background: transparent;
+  border: none;
+  padding: 7px 60px;
+  margin: 0 5px;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: 0.3s, color 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  color: #898989;
+}
+
+.al-map-nav-btn.active {
+  background-color: var(--white-color);
+  border: 1px solid rgba(82, 82, 82, 0.12);
+  color: var(--primary-color);
+}
+
+
+.map {
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 20px;
+    iframe {
+        width: 100%;
+        height: 644px;
+    }
+}
+/******Map Section End*********/
