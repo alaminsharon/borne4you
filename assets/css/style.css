@@ -178,6 +178,10 @@ h6 {
     .al-header-section {
       padding: 40px 4px; } }
 
+@media (max-width: 1199.98px) {
+  .al-header-container {
+    padding: 0 30px; } }
+
 .al-header-nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,13 +227,7 @@ h6 {
         text-transform: capitalize;
         font-size: 14px;
         line-height: 20px;
-        font-weight: 500;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        .al-header-nav > ul > li .submenu-wrapper li a:hover {
-          background-color: var(--header-submenu-color);
-          color: var(--nature-300); }
+        font-weight: 500; }
     .al-header-nav > ul > li:hover .submenu-wrapper {
       top: 100%;
       opacity: 1;
@@ -301,7 +299,7 @@ h6 {
   position: fixed;
   top: 0;
   left: -410px;
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
   z-index: 60;
   padding: 18px 24px;
   overflow-y: scroll;
@@ -315,14 +313,14 @@ h6 {
     position: absolute;
     right: 37px;
     top: 20px;
-    color: var(--primary-color); }
+    color: var(--white-color); }
   .mobile-menu .mobile-nav-menu {
     margin-top: 20px; }
     .mobile-menu .mobile-nav-menu li + li {
       border-top: 1px solid #E8E8E8; }
     .mobile-menu .mobile-nav-menu li a {
       display: inline-block;
-      color: var(--primary-color);
+      color: var(--white-color);
       padding: 15px 0; }
     .mobile-menu .mobile-nav-menu li.has-submenu {
       position: relative; }
@@ -454,8 +452,14 @@ h6 {
 .al-map-section {
   padding: 32px 0 106px 0; }
 
+.al-map-top {
+  gap: 10px; }
+
+.al-map-button-group {
+  gap: 8px; }
+
 .al-map-button {
-  padding: 20px;
+  padding: 11px 17px;
   border: 1px solid #D1D1D1;
   color: var(--primary-color);
   background-color: transparent;
@@ -472,6 +476,9 @@ h6 {
   padding: 4px;
   max-width: 523px;
   width: 100%; }
+  @media (max-width: 991.98px) {
+    .al-map-nav {
+      max-width: 300px; } }
 
 .al-map-nav-btn {
   background: transparent;
@@ -486,6 +493,9 @@ h6 {
   font-size: 16px;
   font-weight: 600;
   color: #898989; }
+  @media (max-width: 991.98px) {
+    .al-map-nav-btn {
+      padding: 7px 20px; } }
 
 .al-map-nav-btn.active {
   background-color: var(--white-color);

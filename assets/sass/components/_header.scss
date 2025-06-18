@@ -11,6 +11,11 @@
     }
 }
 
+.al-header-container {
+    @include large-screen {
+        padding: 0 30px;
+    }
+}
 .al-header-nav {
     &>ul {
         display: flex;
@@ -64,12 +69,6 @@
                         font-size: 14px;
                         line-height: 20px;
                         font-weight: 500;
-                        transition: 0.3s;
-
-                        &:hover {
-                            background-color: var(--header-submenu-color);
-                            color: var(--nature-300);
-                        }
                     }
                 }
             }
@@ -162,7 +161,7 @@
     position: fixed;
     top: 0;
     left: -410px;
-    background-color: var(--white-color);
+    background-color: var(--primary-color);
     z-index: 60;
     padding: 18px 24px;
     overflow-y: scroll;
@@ -172,7 +171,7 @@
         position: absolute;
         right: 37px;
         top: 20px;
-        color: var(--primary-color);
+        color: var(--white-color);
     }
 
     .mobile-nav-menu {
@@ -185,7 +184,7 @@
 
             a {
                 display: inline-block;
-                color: var(--primary-color);
+                color: var(--white-color);
                 padding: 15px 0;
             }
 
