@@ -51,6 +51,7 @@
 .al-selection-card-number-title {
     margin-top: 12px;
     margin-bottom: 16px;
+
     span {
         font-size: 16px;
         font-weight: 500;
@@ -61,6 +62,7 @@
 
 .al-selection-card-subtitle {
     margin-bottom: 32px;
+
     p {
         font-size: 16px;
         font-weight: 500;
@@ -70,9 +72,23 @@
 }
 
 .al-selection-card-item-one {
-    padding: 10px;
+    padding: 19px;
     background: #EDEDED;
     border-radius: 12px;
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #868686;
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+        color: var(--primary-color);
+    }
 }
 
 .al-selection-card-btn {

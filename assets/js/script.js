@@ -31,16 +31,27 @@
             $(this).toggleClass("icon-rotate");
         });
     });
-    
+
 
 })(jQuery);
 
 //Nav Button
-const buttons = document.querySelectorAll('.al-map-nav-btn');
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+
+const navButtons = document.querySelectorAll('.al-map-btn');
+const contentBlocks = document.querySelectorAll('.map-content');
+
+navButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // remove active from buttons
+        navButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // hide all content
+        contentBlocks.forEach(c => c.classList.remove('active'));
+        const target = btn.getAttribute('data-target');
+        document.getElementById(target).classList.add('active');
     });
 });
+
+

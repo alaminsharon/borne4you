@@ -26,14 +26,14 @@
                 <div class="al-header-nav">
                     <ul>
                         <li class="has-submenu">
-                            <a href="#">Particulier</a>
+                            <a href="terminal.html">Particulier</a>
                             <ul class="submenu-wrapper  has-submenu">
                                 <li><a href="#">Particulier 1</a></li>
                                 <li><a href="#">Particulier 2</a></li>
                             </ul>
                         </li>
                         <li class="has-submenu">
-                            <a href="#">Professionnel</a>
+                            <a href="selection.html">Professionnel</a>
                             <ul class="submenu-wrapper  has-submenu">
                                 <li><a href="#">Professionnel 1</a></li>
                                 <li><a href="#">Professionnel 2</a></li>
@@ -145,25 +145,46 @@
     <section class="al-map-section">
         <div class="container-1231">
             <div class="al-map-top d-flex justify-content-between">
-                <div class="al-map-button-group d-inline-flex">
-                    <a href="#" class="al-map-button">Type de connecteur
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                    <a href="#" class="al-map-button">Puissance
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
+                <div class="al-map-select-group d-inline-flex">
+                    <div class="al-map-select-content">
+                        <select>
+                            <option value="option1">Type de connecteur</option>
+                            <option value="option2">USB Type-A</option>
+                            <option value="option3">HDMI</option>
+                            <option value="option4">VGA</option>
+                        </select>
+                    </div>
+                    <div class="al-map-select-content">
+                        <select>
+                            <option value="option1">Puissance</option>
+                            <option value="option2">10W</option>
+                            <option value="option3">18W (Fast Charge)</option>
+                            <option value="option4">65W (High Power)</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="al-map-nav nav">
-                    <button class="al-map-nav-btn active">Carte</button>
-                    <button class="al-map-nav-btn">Villes</button>
-                    <button class="al-map-nav-btn">Liste</button>
+
+                <div class="al-map-nav">
+                    <button class="al-map-btn active" data-target="map1">Carte</button>
+                    <button class="al-map-btn" data-target="map2">Villes</button>
+                    <button class="al-map-btn" data-target="map3">Liste</button>
                 </div>
             </div>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29690.07779869915!2d2.3561255847169966!3d48.87237863301598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dedf7364e8b%3A0x983d3deb50b224bf!2sM%C3%A9nilmontant%2C%20Paris%2C%20France!5e0!3m2!1sen!2sbd!4v1750188689306!5m2!1sen!2sbd"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div id="map1" class="map-content active">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29690.07779869915!2d2.3561255847169966!3d48.87237863301598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dedf7364e8b%3A0x983d3deb50b224bf!2sM%C3%A9nilmontant%2C%20Paris%2C%20France!5e0!3m2!1sen!2sbd!4v1750188689306!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div id="map2" class="map-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59400.070164098914!2d2.3078721004456284!3d48.85559739964895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67201aca99229%3A0x231eb0c967e5eb10!2sPlace%20de%20la%20Bastille!5e0!3m2!1sen!2sbd!4v1750323622334!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div id="map3" class="map-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42030.79771539189!2d2.102037658092371!3d48.8214951496081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b64e9785007%3A0x7a4d64eb3ae3fe8!2s92410%20Ville-d&#39;Avray%2C%20France!5e0!3m2!1sen!2sbd!4v1750323652834!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </section>
