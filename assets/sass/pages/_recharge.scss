@@ -1,0 +1,100 @@
+/******Recharge Page*********/
+
+/******Hero Single Start*********/
+.al-hero-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    @include portrait-phone {
+        gap: 5px;
+    }
+}
+
+.al-hero-btn {
+    padding: 15px 11px;
+    background-color: var(--white-color);
+    display: inline-flex;
+    border-radius: 30px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: var(--secondary-color);
+
+        .al-hero-btn-icon {
+            span {
+                i {
+                    color: var(--white-color);
+                }
+            }
+        }
+
+        .al-hero-btn-title {
+            h6 {
+                color: var(--white-color);
+            }
+        }
+    }
+
+    @include portrait-phone {
+        padding: 10px 8px;
+    }
+
+    @include screen-460 {
+        padding: 3px;
+    }
+}
+
+.al-hero-btn-icon {
+    span {
+        i {
+            font-size: 10px;
+            color: var(--secondary-color);
+        }
+    }
+}
+
+.al-hero-btn-title {
+    h6 {
+        font-weight: 600;
+        line-height: 22px;
+        color: var(--secondary-color);
+
+        @include portrait-phone {
+            font-size: 16px;
+        }
+
+        @include screen-460 {
+            font-size: 14px;
+        }
+
+        @include screen-400 {
+            font-size: 12px;
+        }
+    }
+}
+/******Hero Single End*********/
+
+/******Recharge Section Start*********/
+
+/******Recharge Section End*********/
+
+.al-map-inner-title {
+    h2 {
+        line-height: 52px;
+        @include large-screen {
+            font-size: 37px;
+            line-height: 37px;
+        }
+        @include screen-992 {
+            margin-bottom: 20px;
+        }
+        @include portrait-phone {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        @include screen-460 {
+            font-size: 21px;
+        }
+    }
+}

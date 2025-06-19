@@ -52,6 +52,15 @@
     }
 }
 
+.al-hero-single-title {
+    h1 {
+        max-width: 660px;
+        @include portrait-phone {
+            font-size: 27px;
+        }
+    }
+}
+
 .al-hero-subtitle {
     margin-top: 24px;
     margin-bottom: 28px;
@@ -68,6 +77,17 @@
             font-size: 16px;
         }
     }
+}
+
+.al-hero-single-subtitle {
+    p {
+        max-width: 610px;
+    }
+}
+
+.al-hero-single-title {
+    max-width: 660px;
+    margin: 0 auto;
 }
 
 .al-hero-form {
@@ -121,7 +141,7 @@
 .al-map-section {
     padding: 32px 0 106px 0;
 
-    @include screen-768 {
+    @include screen-992 {
         padding: 32px 0;
     }
 }
@@ -193,6 +213,7 @@
             font-size: 14px;
         }
     }
+
     .form-select {
         background-position: right 1.5rem center;
     }
@@ -236,6 +257,13 @@
 
     @include portrait-phone {
         max-width: 370px;
+    }
+}
+
+.al-map-nav-recharge {
+    max-width: 351px;
+    @include portrait-phone {
+        max-width: 225px;
     }
 }
 
@@ -301,7 +329,7 @@
 .al-change-section {
     padding: 0 0 90px 0;
 
-    @include screen-768 {
+    @include screen-992 {
         padding: 0 0 56px 0;
     }
 
@@ -455,7 +483,7 @@
 .al-about-section {
     padding: 90px 0;
 
-    @include screen-768 {
+    @include screen-992 {
         padding: 56px 0;
     }
 
@@ -603,7 +631,7 @@
     padding: 18px 34px;
 
     @include screen-1260 {
-        padding: 4px 10px;
+        padding: 18px 10px;
         font-size: 13px;
     }
 
@@ -766,7 +794,7 @@
 .al-faq-section {
     padding: 90px 0 180px 0;
 
-    @include screen-768 {
+    @include screen-992 {
         padding: 30px 0;
     }
 }

@@ -10,7 +10,7 @@
 }
 
 .al-terminal-content {
-    background: linear-gradient(0deg, #EDEDED, #EDEDED), linear-gradient(0deg, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16)), url(.png);
+    background: linear-gradient(0deg, #EDEDED, #EDEDED), linear-gradient(0deg, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16));
     border-radius: 20px;
     padding: 24px 43px;
     @include large-screen {
@@ -46,6 +46,9 @@
         font-weight: 500;
         line-height: 20px;
         color: #000000;
+        @include screen-400 {
+            font-size: 19px;
+        }
     }
 }
 /******Terminal Section End*********/
