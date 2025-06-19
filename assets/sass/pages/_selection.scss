@@ -82,6 +82,11 @@
     }
 }
 
+.al-selection-card-item {
+    @include screen-768 {
+        flex-wrap: wrap;
+    }
+}
 .al-selection-card-item-one {
     padding: 12px;
     background: #EDEDED;
