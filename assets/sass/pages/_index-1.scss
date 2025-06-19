@@ -516,6 +516,26 @@
     }
 }
 
+.al-about-gradient {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 2px solid transparent;
+    border-radius: 90px;
+    background-image: linear-gradient(#535353, #535353),
+        linear-gradient(90deg, #909A9D 0%, #4E4F5C 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 18px 34px;
+    @include screen-1260 {
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+}
+
 .al-about-button {
     font-size: 20px;
     font-weight: 600;
@@ -542,6 +562,12 @@
 }
 
 .al-about-button-two {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 18px 34px;
+    color: var(--white-color);
+    border-radius: 90px;
     background-color: var(--secondary-color);
     box-shadow: inset 0px -6px 16.9px #5188FE;
     transition: 0.3s;
@@ -549,6 +575,15 @@
     &:hover {
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: none;
+    }
+    @include large-screen {
+        padding: 18px 13px;
+        font-size: 16px;
+    }
+
+    @include screen-460 {
+        padding: 10px;
+        font-size: 14px;
     }
 }
 
@@ -669,7 +704,7 @@
 
     .accordion-item {
         border: none;
-        margin-bottom: 15px;
+        margin-bottom: 14px;
 
         .accordion-header {
             .accordion-button {
@@ -700,14 +735,15 @@
             }
 
             .accordion-button:not(.collapsed) {
-                background: transparent;
                 color: var(--primary-color);
                 box-shadow: none;
+                border-radius: 0;
             }
         }
 
         .accordion-body {
             color: var(--primary-color);
+            background: #FBFBFB;
             font-size: 18px;
             font-weight: 500;
             line-height: 24px;

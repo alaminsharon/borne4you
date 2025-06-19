@@ -35,7 +35,7 @@
                     font-size: 15px;
                     color: var(--white-color);
                     right: -3px;
-                    top: 6px;
+                    top: 4px;
                     cursor: pointer;
                     transition: 0.3s;
 
@@ -108,7 +108,7 @@
     }
 }
 
-.gradient-border {
+.al-header-gradient {
     display: inline-block;
     padding: 9px 20px;
     border: 2px solid transparent;
@@ -117,8 +117,7 @@
         linear-gradient(90deg, #0151FD 0%, #A3C0FF 52%, #241710 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    color: white;
-    font-family: sans-serif;
+    color: var(--white-color);
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
