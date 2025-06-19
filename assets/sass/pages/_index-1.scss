@@ -144,13 +144,13 @@
     }
 }
 
-.al-map-select-content {
+.al-map-select-content-one {
     @include screen-992 {
         margin-bottom: 20px;
     }
 
     select {
-        padding: 13.5px 17px;
+        padding: 12.5px 31px 13.5PX 17PX;
         border-radius: 80px;
         font-size: 16px;
         font-weight: 600;
@@ -165,10 +165,43 @@
         }
 
         @include portrait-phone {
-            padding: 8px;
+            padding: 12.5px 31px 12.5px 10px;
             font-size: 14px;
         }
     }
+}
+
+.al-map-select-content-two {
+
+    select {
+        padding: 13px 1px 13px 20px;
+        border-radius: 80px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--primary-color);
+        background-color: transparent;
+        border: 1px solid #D1D1D1;
+        transition: 0.3s;
+
+        option {
+            border: none;
+            outline: none;
+        }
+
+        @include portrait-phone {
+            padding: 12.5px;
+            font-size: 14px;
+        }
+    }
+    .form-select {
+        background-position: right 1.5rem center;
+    }
+}
+
+.form-select:focus {
+    border-color: #D1D1D1;
+    outline: 0;
+    box-shadow: none;
 }
 
 .map {

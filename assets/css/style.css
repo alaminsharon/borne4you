@@ -421,24 +421,6 @@ h6 {
     left: 0; }
 
 /******Header Home page *********/
-.primary-btn {
-  padding: 6px 24px;
-  background: var(--secondary-color);
-  color: var(--white-color);
-  font-size: 15px;
-  font-weight: 500;
-  font-family: var(--primary-font);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 3px; }
-
 /********* Footer *********/
 /********* Footer Section Start *********/
 .al-footer-section {
@@ -645,11 +627,11 @@ h6 {
       gap: 5px; } }
 
 @media (max-width: 991.98px) {
-  .al-map-select-content {
+  .al-map-select-content-one {
     margin-bottom: 20px; } }
 
-.al-map-select-content select {
-  padding: 13.5px 17px;
+.al-map-select-content-one select {
+  padding: 12.5px 31px 13.5PX 17PX;
   border-radius: 80px;
   font-size: 16px;
   font-weight: 600;
@@ -659,13 +641,41 @@ h6 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
-  .al-map-select-content select option {
+  .al-map-select-content-one select option {
     border: none;
     outline: none; }
   @media (max-width: 575.98px) {
-    .al-map-select-content select {
-      padding: 8px;
+    .al-map-select-content-one select {
+      padding: 12.5px 31px 12.5px 10px;
       font-size: 14px; } }
+
+.al-map-select-content-two select {
+  padding: 13px 1px 13px 20px;
+  border-radius: 80px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid #D1D1D1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-map-select-content-two select option {
+    border: none;
+    outline: none; }
+  @media (max-width: 575.98px) {
+    .al-map-select-content-two select {
+      padding: 12.5px;
+      font-size: 14px; } }
+
+.al-map-select-content-two .form-select {
+  background-position: right 1.5rem center; }
+
+.form-select:focus {
+  border-color: #D1D1D1;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 .map {
   margin-top: 20px; }
@@ -1289,7 +1299,7 @@ h6 {
   background: -o-linear-gradient(bottom, #EDEDED, #EDEDED), -o-linear-gradient(bottom, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16)), url(.png);
   background: linear-gradient(0deg, #EDEDED, #EDEDED), linear-gradient(0deg, rgba(45, 45, 45, 0.16), rgba(45, 45, 45, 0.16)), url(.png);
   border-radius: 20px;
-  padding: 24px 110px 40px 110px; }
+  padding: 24px 110px; }
   @media (max-width: 1199.98px) {
     .al-selection-content {
       padding: 20px; } }
@@ -1297,7 +1307,9 @@ h6 {
 .al-selection-card {
   background-color: var(--white-color);
   border-radius: 24px;
-  padding: 8px 20px 8px 8px; }
+  padding: 8px 20px 12px 8px; }
+  .al-selection-card + .al-selection-card {
+    margin-top: 24px; }
 
 .al-selection-card-box {
   width: 256px;
@@ -1323,7 +1335,7 @@ h6 {
     color: #535353; }
 
 .al-selection-card-subtitle {
-  margin-bottom: 32px; }
+  margin-bottom: 20px; }
   .al-selection-card-subtitle p {
     font-size: 16px;
     font-weight: 500;
@@ -1331,7 +1343,7 @@ h6 {
     color: #535353; }
 
 .al-selection-card-item-one {
-  padding: 19px;
+  padding: 13px;
   background: #EDEDED;
   border-radius: 12px; }
   .al-selection-card-item-one p {
@@ -1360,10 +1372,33 @@ h6 {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .al-selection-card-btn a:hover {
-    background-color: var(--primary-color); }
+    background-color: var(--primary-color);
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   @media (max-width: 575.98px) {
     .al-selection-card-btn a {
       font-size: 16px;
       padding: 16px 20px; } }
 
-/******** theme file **********/
+.al-selection-card-bottom-btn a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 16px 31px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 90px;
+  display: inline-block;
+  -webkit-box-shadow: inset 0px -3px 10.5px #7A8BFE;
+  box-shadow: inset 0px -3px 10.5px #7A8BFE;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-selection-card-bottom-btn a:hover {
+    background-color: var(--primary-color);
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  @media (max-width: 575.98px) {
+    .al-selection-card-bottom-btn a {
+      font-size: 16px;
+      padding: 16px 20px; } }

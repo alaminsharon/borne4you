@@ -8,15 +8,12 @@
 
 /******** components file ********/
 @import 'components/header';
-@import 'components/buttons';
 @import 'components/footer';
 
 /******** pages file **********/
 @import 'pages/index-1';
 @import 'pages/terminal';
 @import 'pages/selection';
+@import 'pages/recharge';
 
 
-/******** theme file **********/
-@import 'theme/animation';
-@import 'theme/common';
