@@ -41,3 +41,51 @@ select {
     outline: 0;
     border: 0;
 }
+
+
+/******Scroll Top Button*********/
+
+.scroll-top-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #7C458F;
+    border-radius: 5px;
+    border: none;
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    z-index: 50;
+    font-size: 22px;
+    transition: 0.3s;
+
+    i {
+        color: var(--white-color);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(97.3deg, #AF59CC 16.54%, #E9447B 71.36%);
+        color: #fff;
+        z-index: -1;
+        border-radius: 5px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        i {
+            color: var(--white-color);
+        }
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+    }
+}

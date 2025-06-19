@@ -74,7 +74,7 @@
 
         input {
             border-radius: 90px;
-            padding: 12px 24px;
+            padding: 12px 170px 12px 24px;
             border: 0;
             outline: 0;
             width: 100%;
@@ -99,6 +99,7 @@
     border-radius: 90px;
     border: none;
     transition: 0.3s;
+
     &:hover {
         background-color: var(--primary-color);
     }
@@ -370,6 +371,8 @@
     img {
         min-height: 633px;
         height: 100px;
+        object-fit: cover;
+        border-radius: 24px;
 
         @include screen-992 {
             width: 100%;
@@ -530,7 +533,7 @@
     font-weight: 600;
     line-height: 22px;
     padding: 18px 34px;
-    
+
     @include screen-1260 {
         padding: 4px 10px;
         font-size: 13px;
@@ -577,6 +580,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: none;
     }
+
     @include large-screen {
         padding: 18px 13px;
         font-size: 16px;
@@ -726,6 +730,7 @@
                     color: var(--primary-color);
                     transform: rotate(90deg);
                 }
+
                 @include portrait-phone {
                     font-size: 18px;
                 }
@@ -738,7 +743,11 @@
             .accordion-button:not(.collapsed) {
                 color: var(--primary-color);
                 box-shadow: none;
-                border-radius: 0;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .accordion-button:not(.collapsed)::after {
+                transform: rotate(0deg) !important;
             }
         }
 
@@ -748,6 +757,7 @@
             font-size: 18px;
             font-weight: 500;
             line-height: 24px;
+            border-radius: 0 0 20px 20px;
         }
     }
 }

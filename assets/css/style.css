@@ -71,6 +71,45 @@ select {
   outline: 0;
   border: 0; }
 
+/******Scroll Top Button*********/
+.scroll-top-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #7C458F;
+  border-radius: 5px;
+  border: none;
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  z-index: 50;
+  font-size: 22px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .scroll-top-btn i {
+    color: var(--white-color); }
+  .scroll-top-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(352.7deg, #AF59CC 16.54%, #E9447B 71.36%);
+    background: -o-linear-gradient(352.7deg, #AF59CC 16.54%, #E9447B 71.36%);
+    background: linear-gradient(97.3deg, #AF59CC 16.54%, #E9447B 71.36%);
+    color: #fff;
+    z-index: -1;
+    border-radius: 5px;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .scroll-top-btn:hover i {
+    color: var(--white-color); }
+  .scroll-top-btn:hover::before {
+    opacity: 1; }
+
 h1 {
   font-size: 62px; }
 
@@ -438,7 +477,7 @@ h6 {
     background-color: #1E2024;
     color: var(--white-color);
     border-radius: 90px;
-    padding: 12px 24px;
+    padding: 12px 170px 12px 24px;
     border: none;
     outline: none;
     width: 100%; }
@@ -550,7 +589,7 @@ h6 {
   margin: 0 auto; }
   .al-hero-form form input {
     border-radius: 90px;
-    padding: 12px 24px;
+    padding: 12px 170px 12px 24px;
     border: 0;
     outline: 0;
     width: 100%; }
@@ -799,7 +838,10 @@ h6 {
 
 .al-change-thumb img {
   min-height: 633px;
-  height: 100px; }
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 24px; }
   @media (max-width: 991.98px) {
     .al-change-thumb img {
       width: 100%;
@@ -1106,13 +1148,18 @@ h6 {
       color: var(--primary-color);
       -webkit-box-shadow: none;
       box-shadow: none;
-      border-radius: 0; }
+      border-radius: 20px 20px 0 0; }
+    .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+      -webkit-transform: rotate(0deg) !important;
+      -ms-transform: rotate(0deg) !important;
+      transform: rotate(0deg) !important; }
     .al-faq-accordion .accordion-item .accordion-body {
       color: var(--primary-color);
       background: #FBFBFB;
       font-size: 18px;
       font-weight: 500;
-      line-height: 24px; }
+      line-height: 24px;
+      border-radius: 0 0 20px 20px; }
 
 .accordion-item:last-child {
   margin-bottom: 0; }

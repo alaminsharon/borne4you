@@ -31,6 +31,7 @@
             $(this).toggleClass("icon-rotate");
         });
     });
+    
 
 })(jQuery);
 
