@@ -193,22 +193,32 @@ h6 {
       position: absolute;
       font-size: 15px;
       color: var(--white-color);
-      right: -6px;
-      top: 1px; }
+      right: -3px;
+      top: 6px;
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .al-header-nav > ul > li.has-submenu::after:hover {
+        color: var(--secondary-color); }
+      @media (max-width: 1260px) {
+        .al-header-nav > ul > li.has-submenu::after {
+          right: -6px;
+          top: 2px; } }
     .al-header-nav > ul > li a {
       font-size: 14px;
       font-weight: 500;
       line-height: 20px;
       display: inline-block;
       color: var(--white-color);
-      padding: 0 10px;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
+      padding: 8px 15px; }
+      @media (max-width: 1260px) {
+        .al-header-nav > ul > li a {
+          padding: 0 10px; } }
     .al-header-nav > ul > li .submenu-wrapper {
       position: absolute;
       right: -72px;
-      min-width: 208px;
+      min-width: 180px;
       display: block;
       background: var(--white-color);
       z-index: -1;
@@ -217,7 +227,7 @@ h6 {
       padding-left: 0;
       border-radius: 6px; }
       .al-header-nav > ul > li .submenu-wrapper li a {
-        min-width: 208px;
+        min-width: 180px;
         padding: 8px 16px;
         background-color: transparent;
         color: var(--primary-color);
@@ -229,6 +239,14 @@ h6 {
       top: 100%;
       opacity: 1;
       visibility: visible; }
+
+@media (max-width: 1199.98px) {
+  .al-header-nav {
+    display: none; } }
+
+@media (max-width: 1199.98px) {
+  .al-header-button {
+    display: none; } }
 
 .gradient-border {
   display: inline-block;
@@ -246,20 +264,9 @@ h6 {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px; }
-
-.al-header-button-one-submain {
-  background-color: black;
-  color: var(--white-color);
-  border-radius: 90px;
-  width: 100%;
-  height: 100%;
-  display: inline-block; }
-  .al-header-button-one-submain i {
-    color: var(--white-color);
-    margin-right: 4px; }
   @media (max-width: 1260px) {
-    .al-header-button-one-submain {
-      padding: 8px 10px;
+    .gradient-border {
+      padding: 4px 10px;
       font-size: 13px; } }
 
 .al-header-button-two {
@@ -272,7 +279,18 @@ h6 {
   box-shadow: inset 0px -3px 10.5px #7A8BFE;
   border-radius: 60px;
   padding: 13px 12px 13px 14px;
-  margin-left: 14px; }
+  margin-left: 14px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-header-button-two:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .al-header-button-two:hover span {
+      background-color: var(--secondary-color);
+      color: var(--white-color); }
   .al-header-button-two span {
     width: 24px;
     height: 24px;
@@ -295,13 +313,20 @@ h6 {
       font-size: 13px;
       margin-left: 8px; } }
 
-.mobile-toggle .header_toggle_btn span {
-  width: 32px;
-  height: 2px;
-  display: block;
-  background: var(--white-color); }
-  .mobile-toggle .header_toggle_btn span + span {
-    margin-top: 8px; }
+.mobile-toggle {
+  display: none; }
+  @media (max-width: 1199.98px) {
+    .mobile-toggle {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; } }
+  .mobile-toggle .header_toggle_btn span {
+    width: 32px;
+    height: 2px;
+    display: block;
+    background: var(--white-color); }
+    .mobile-toggle .header_toggle_btn span + span {
+      margin-top: 8px; }
 
 /******Header Section End*********/
 /************************ mobile menu start ****************/
@@ -425,9 +450,14 @@ h6 {
   background-color: var(--secondary-color);
   color: var(--white-color);
   position: absolute;
-  right: 0;
+  right: -1px;
   top: 0;
-  border-radius: 90px; }
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-footer-form-btn:hover {
+    background-color: #535353; }
   @media (max-width: 575.98px) {
     .al-footer-form-btn {
       padding: 16px 10px;
@@ -520,8 +550,8 @@ h6 {
   .al-hero-form form input {
     border-radius: 90px;
     padding: 12px 24px;
-    border: none;
-    outline: none;
+    border: 0;
+    outline: 0;
     width: 100%; }
     @media (max-width: 575.98px) {
       .al-hero-form form input {
@@ -535,9 +565,15 @@ h6 {
   background-color: var(--secondary-color);
   color: var(--white-color);
   position: absolute;
-  right: 0;
+  right: -1px;
   top: 0;
-  border-radius: 90px; }
+  border-radius: 90px;
+  border: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-hero-form-btn:hover {
+    background-color: var(--primary-color); }
   @media (max-width: 575.98px) {
     .al-hero-form-btn {
       padding: 16px 10px;
@@ -1004,7 +1040,8 @@ h6 {
   max-width: 680px;
   margin: 0 auto; }
   .al-faq-accordion .accordion-item {
-    border: none; }
+    border: none;
+    margin-bottom: 15px; }
     .al-faq-accordion .accordion-item .accordion-header .accordion-button {
       font-size: 20px;
       font-weight: 600;
@@ -1039,6 +1076,9 @@ h6 {
       font-size: 18px;
       font-weight: 500;
       line-height: 24px; }
+
+.accordion-item:last-child {
+  margin-bottom: 0; }
 
 .al-faq-btn a {
   font-size: 20px;
