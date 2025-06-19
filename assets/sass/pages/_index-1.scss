@@ -37,12 +37,17 @@
         line-height: 58px;
 
         @include large-screen {
-            font-size: 47px;
+            font-size: 43px;
+        }
+
+        @include screen-768 {
+            font-size: 35px;
+            line-height: 38px;
         }
 
         @include portrait-phone {
-            font-size: 31px;
-            line-height: 38px;
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 }
@@ -256,8 +261,8 @@
         }
 
         @include portrait-phone {
-            font-size: 34px;
-            line-height: 40px;
+            font-size: 23px;
+            line-height: 30px;
         }
     }
 }
@@ -345,7 +350,7 @@
     box-shadow: inset 0px -3px 10.5px #7A8BFE;
 
     @include portrait-phone {
-        padding: 16px 20px;
+        padding: 16px;
         font-size: 16px;
     }
 
@@ -435,8 +440,8 @@
         }
 
         @include portrait-phone {
-            font-size: 40px;
-            line-height: 40px;
+            font-size: 25px;
+            line-height: 30px;
         }
     }
 }
@@ -538,6 +543,11 @@
         padding: 4px 10px;
         font-size: 13px;
     }
+
+    @include screen-400 {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
 }
 
 .al-about-button {
@@ -637,6 +647,10 @@
         font-weight: 500;
         line-height: 20px;
         color: var(--white-color);
+
+        @include portrait-phone {
+            font-size: 22px;
+        }
     }
 }
 
@@ -647,6 +661,14 @@
         font-weight: 500;
         line-height: 20px;
         color: var(--white-color);
+
+        @include portrait-phone {
+            font-size: 14px;
+        }
+    }
+
+    @include portrait-phone {
+        margin-bottom: 6px;
     }
 }
 
@@ -655,6 +677,10 @@
         font-weight: 500;
         line-height: 52px;
         color: var(--white-color);
+        @include portrait-phone {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
 }
 
@@ -663,6 +689,10 @@
         font-weight: 500;
         line-height: 40px;
         color: var(--white-color);
+
+        @include portrait-phone {
+            font-size: 30px;
+        }
     }
 }
 
@@ -673,10 +703,6 @@
     padding: 90px 0 180px 0;
 
     @include screen-768 {
-        padding: 56px 0;
-    }
-
-    @include portrait-phone {
         padding: 30px 0;
     }
 }
@@ -689,6 +715,11 @@
             font-size: 40px;
             line-height: 40px;
         }
+
+        @include portrait-phone {
+            font-size: 30px;
+            line-height: 30px;
+        }
     }
 }
 
@@ -700,6 +731,9 @@
         font-size: 20px;
         line-height: 20px;
         font-weight: 500;
+        @include portrait-phone {
+            font-size: 16px;
+        }
     }
 }
 
