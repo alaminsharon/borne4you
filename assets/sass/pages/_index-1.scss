@@ -138,12 +138,19 @@
 
 .al-map-select-group {
     gap: 15px;
+
+    @include portrait-phone {
+        gap: 5px;
+    }
 }
 
 .al-map-select-content {
+    @include screen-992 {
+        margin-bottom: 20px;
+    }
 
     select {
-        padding: 11px 17px;
+        padding: 13.5px 17px;
         border-radius: 80px;
         font-size: 16px;
         font-weight: 600;
@@ -155,6 +162,11 @@
         option {
             border: none;
             outline: none;
+        }
+
+        @include portrait-phone {
+            padding: 8px;
+            font-size: 14px;
         }
     }
 }
@@ -181,7 +193,7 @@
     display: flex;
     background-color: rgba(187, 187, 187, 0.12);
     border-radius: 60px;
-    padding: 4px;
+    padding: 0px;
     max-width: 523px;
     width: 100%;
 
@@ -786,7 +798,7 @@
                 }
 
                 @include portrait-phone {
-                    font-size: 18px;
+                    font-size: 15px;
                 }
             }
 
