@@ -318,8 +318,10 @@ h6 {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .al-header-gradient:hover {
-    background-image: none;
-    background-color: var(--secondary-color); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0151FD), to(#0151FD)), -webkit-gradient(linear, left top, right top, from(#0151FD), color-stop(52%, #0151FD), to(#0151FD));
+    background-image: -webkit-linear-gradient(#0151FD, #0151FD), -webkit-linear-gradient(left, #0151FD 0%, #0151FD 52%, #0151FD 100%);
+    background-image: -o-linear-gradient(#0151FD, #0151FD), -o-linear-gradient(left, #0151FD 0%, #0151FD 52%, #0151FD 100%);
+    background-image: linear-gradient(#0151FD, #0151FD), linear-gradient(90deg, #0151FD 0%, #0151FD 52%, #0151FD 100%); }
   @media (max-width: 1260px) {
     .al-header-gradient {
       padding: 4px 10px;
@@ -941,8 +943,10 @@ h6 {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .al-change-gradient:hover {
-    background-image: none;
-    background-color: var(--secondary-color); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0151FD), to(#0151FD)), -webkit-gradient(linear, left top, right top, from(#0151FD), color-stop(52%, #0151FD), to(#0151FD));
+    background-image: -webkit-linear-gradient(#0151FD, #0151FD), -webkit-linear-gradient(left, #0151FD 0%, #0151FD 52%, #0151FD 100%);
+    background-image: -o-linear-gradient(#0151FD, #0151FD), -o-linear-gradient(left, #0151FD 0%, #0151FD 52%, #0151FD 100%);
+    background-image: linear-gradient(#0151FD, #0151FD), linear-gradient(90deg, #0151FD 0%, #0151FD 52%, #0151FD 100%); }
   @media (max-width: 1260px) {
     .al-change-gradient {
       padding: 18px 10px;
@@ -1097,8 +1101,10 @@ h6 {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .al-about-gradient:hover {
-    background-image: none;
-    background-color: var(--secondary-color); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0151FD), to(#0151FD)), -webkit-gradient(linear, left top, right top, from(#0151FD), color-stop(52%, #0151FD), to(#0151FD));
+    background-image: -webkit-linear-gradient(#0151FD, #0151FD), -webkit-linear-gradient(left, #0151FD 0%, #0151FD 52%, #0151FD 100%);
+    background-image: -o-linear-gradient(#0151FD, #0151FD), -o-linear-gradient(left, #0151FD 0%, #0151FD 52%, #0151FD 100%);
+    background-image: linear-gradient(#0151FD, #0151FD), linear-gradient(90deg, #0151FD 0%, #0151FD 52%, #0151FD 100%); }
   @media (max-width: 1260px) {
     .al-about-gradient {
       padding: 18px 10px;
@@ -1277,7 +1283,10 @@ h6 {
       background: #FBFBFB;
       color: var(--primary-color);
       outline: 0;
-      border-radius: 20px; }
+      border-radius: 20px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
       .al-faq-accordion .accordion-item .accordion-header .accordion-button::after {
         content: "\f105";
         font-family: "FontAwesome";
@@ -1286,7 +1295,12 @@ h6 {
         color: var(--primary-color);
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-        transform: rotate(90deg); }
+        transform: rotate(90deg);
+        position: relative;
+        margin-left: 10px; }
+        @media (max-width: 460px) {
+          .al-faq-accordion .accordion-item .accordion-header .accordion-button::after {
+            top: -6px; } }
       @media (max-width: 575.98px) {
         .al-faq-accordion .accordion-item .accordion-header .accordion-button {
           font-size: 15px; } }

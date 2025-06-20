@@ -491,8 +491,7 @@
     transition: 0.3s;
 
     &:hover {
-        background-image: none;
-        background-color: var(--secondary-color);
+        background-image: linear-gradient(#0151FD, #0151FD), linear-gradient(90deg, #0151FD 0%, #0151FD 52%, #0151FD 100%);
     }
 
     @include screen-1260 {
@@ -681,8 +680,7 @@
     transition: 0.3s;
 
     &:hover {
-        background-image: none;
-        background-color: var(--secondary-color);
+        background-image: linear-gradient(#0151FD, #0151FD), linear-gradient(90deg, #0151FD 0%, #0151FD 52%, #0151FD 100%);
     }
 
     @include screen-1260 {
@@ -903,6 +901,7 @@
                 color: var(--primary-color);
                 outline: 0;
                 border-radius: 20px;
+                justify-content: space-between;
 
                 &::after {
                     content: "\f105";
@@ -911,6 +910,11 @@
                     background: transparent;
                     color: var(--primary-color);
                     transform: rotate(90deg);
+                    position: relative;
+                    margin-left: 10px;
+                    @include screen-460 {
+                        top: -6px;
+                    }
                 }
 
                 @include portrait-phone {

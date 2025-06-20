@@ -142,8 +142,7 @@
     transition: 0.3s;
 
     &:hover {
-        background-image: none;
-        background-color: var(--secondary-color);
+        background-image: linear-gradient(#0151FD, #0151FD), linear-gradient(90deg, #0151FD 0%, #0151FD 52%, #0151FD 100%);
     }
 
     @include screen-1260 {
