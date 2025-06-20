@@ -1560,9 +1560,6 @@ h6 {
   @media (max-width: 575.98px) {
     .al-recharge-left-btn {
       padding: 10px 8px; } }
-  @media (max-width: 460px) {
-    .al-recharge-left-btn {
-      padding: 3px; } }
 
 .al-recharge-left-btn-icon span i {
   font-size: 10px;

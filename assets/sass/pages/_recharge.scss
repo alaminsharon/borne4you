@@ -127,10 +127,6 @@
     @include portrait-phone {
         padding: 10px 8px;
     }
-
-    @include screen-460 {
-        padding: 3px;
-    }
 }
 
 .al-recharge-left-btn-icon {
