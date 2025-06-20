@@ -47,7 +47,8 @@
 
         input {
             background-color: #1E2024;
-            color: var(--white-color);
+            color: #B5B5B5;
+            font-style: italic;
             border-radius: 90px;
             padding: 12px 170px 12px 24px;
             border: none;
@@ -56,6 +57,7 @@
         }
     }
 }
+
 
 .al-footer-form-btn {
     font-size: 16px;
@@ -66,7 +68,8 @@
     color: var(--white-color);
     position: absolute;
     right: -1px;
-    top: 0;
+    top: -1px;
+    bottom: -1px;
     border-radius: 90px;
     transition: 0.3s;
     &:hover {

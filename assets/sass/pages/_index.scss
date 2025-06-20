@@ -104,6 +104,9 @@
             border: 0;
             outline: 0;
             width: 100%;
+            font-style: italic;
+            background-color: var(--white-color);
+            color: #B5B5B5;
 
             @include portrait-phone {
                 padding: 12px;
@@ -121,7 +124,8 @@
     color: var(--white-color);
     position: absolute;
     right: -1px;
-    top: 0;
+    top: -1px;
+    bottom: -1px;
     border-radius: 90px;
     border: none;
     transition: 0.3s;
