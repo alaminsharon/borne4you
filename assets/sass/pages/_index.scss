@@ -199,7 +199,7 @@
 .al-map-select-content-two {
 
     select {
-        padding: 13px 1px 13px 20px;
+        padding: 13px 40px 13px 20px;
         border-radius: 80px;
         font-size: 16px;
         font-weight: 600;
@@ -220,7 +220,7 @@
     }
 
     .form-select {
-        background-position: right 1.5rem center;
+        background-position: right 1rem center;
     }
 }
 
@@ -253,7 +253,7 @@
     background-color: rgba(187, 187, 187, 0.12);
     border-radius: 60px;
     padding: 0px;
-    max-width: 523px;
+    max-width: 510px;
     width: 100%;
 
     @include screen-992 {
@@ -266,7 +266,7 @@
 }
 
 .al-map-nav-recharge {
-    max-width: 351px;
+    max-width: 338px;
 
     @include portrait-phone {
         max-width: 225px;
@@ -425,6 +425,11 @@
         line-height: 20px;
         display: inline-block;
         max-width: 415px;
+        color: #535353;
+        font-weight: 400;
+        strong {
+            color: var(--primary-color);
+        }
 
         @include portrait-phone {
             font-size: 16px;
@@ -468,6 +473,40 @@
         background-color: var(--secondary-color);
     }
 }
+
+.al-change-gradient {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 2px solid transparent;
+    border-radius: 90px;
+    background-image: linear-gradient(#2D2D2D, #2D2D2D),
+        linear-gradient(90deg, #909A9D 0%, #4E4F5C 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 18px 34px;
+    transition: 0.3s;
+
+    &:hover {
+        background-image: none;
+        background-color: var(--secondary-color);
+    }
+
+    @include screen-1260 {
+        padding: 18px 10px;
+        font-size: 13px;
+    }
+
+    @include screen-400 {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+}
+
+
 
 .al-change-thumb {
     img {
@@ -605,6 +644,10 @@
         display: inline-block;
         max-width: 550px;
         color: var(--white-color);
+        font-weight: 400;
+        strong {
+            color: var(--white-color);
+        }
 
         @include portrait-phone {
             font-size: 16px;
@@ -886,7 +929,7 @@
             }
 
             .accordion-button:not(.collapsed)::after {
-                transform: rotate(0deg) !important;
+                transform: rotate(270deg) !important;
             }
         }
 
