@@ -766,7 +766,8 @@ h6 {
   color: #898989;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  border: 1px solid transparent; }
   .al-map-btn:hover {
     background-color: var(--primary-color);
     color: var(--white-color); }
