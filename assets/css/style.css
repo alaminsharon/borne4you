@@ -224,22 +224,22 @@ h6 {
   .al-header-nav > ul > li {
     z-index: 20;
     position: relative; }
-    .al-header-nav > ul > li.has-submenu::after {
+    .al-header-nav > ul > li.has-submenu > a::after {
       content: "\f107";
       font-family: "FontAwesome";
       position: absolute;
       font-size: 15px;
       color: var(--white-color);
-      right: -3px;
-      top: 4px;
+      right: -4px;
+      top: 8px;
       cursor: pointer;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
-      .al-header-nav > ul > li.has-submenu::after:hover {
+      .al-header-nav > ul > li.has-submenu > a::after:hover {
         color: var(--secondary-color); }
       @media (max-width: 1260px) {
-        .al-header-nav > ul > li.has-submenu::after {
+        .al-header-nav > ul > li.has-submenu > a::after {
           right: -6px;
           top: 2px; } }
     .al-header-nav > ul > li a {
@@ -248,7 +248,14 @@ h6 {
       line-height: 20px;
       display: inline-block;
       color: var(--white-color);
-      padding: 8px 15px; }
+      padding: 8px 15px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .al-header-nav > ul > li a:hover {
+        color: var(--secondary-color); }
+        .al-header-nav > ul > li a:hover::after {
+          color: var(--secondary-color); }
       @media (max-width: 1260px) {
         .al-header-nav > ul > li a {
           padding: 0 10px; } }
@@ -271,7 +278,14 @@ h6 {
         text-transform: capitalize;
         font-size: 14px;
         line-height: 20px;
-        font-weight: 500; }
+        font-weight: 500;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .al-header-nav > ul > li .submenu-wrapper li a:hover {
+          color: var(--secondary-color); }
+      .al-header-nav > ul > li .submenu-wrapper li + li {
+        border-top: 1px solid #cacaca; }
     .al-header-nav > ul > li:hover .submenu-wrapper {
       top: 100%;
       opacity: 1;
@@ -299,7 +313,13 @@ h6 {
   color: var(--white-color);
   font-size: 14px;
   font-weight: 600;
-  line-height: 22px; }
+  line-height: 22px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-header-gradient:hover {
+    background-image: none;
+    background-color: var(--secondary-color); }
   @media (max-width: 1260px) {
     .al-header-gradient {
       padding: 4px 10px;
@@ -1028,7 +1048,13 @@ h6 {
   font-size: 20px;
   font-weight: 600;
   line-height: 22px;
-  padding: 18px 34px; }
+  padding: 18px 34px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-about-gradient:hover {
+    background-image: none;
+    background-color: var(--secondary-color); }
   @media (max-width: 1260px) {
     .al-about-gradient {
       padding: 18px 10px;

@@ -55,6 +55,7 @@
 .al-hero-single-title {
     h1 {
         max-width: 660px;
+
         @include portrait-phone {
             font-size: 27px;
         }
@@ -262,6 +263,7 @@
 
 .al-map-nav-recharge {
     max-width: 351px;
+
     @include portrait-phone {
         max-width: 225px;
     }
@@ -629,6 +631,12 @@
     font-weight: 600;
     line-height: 22px;
     padding: 18px 34px;
+    transition: 0.3s;
+
+    &:hover {
+        background-image: none;
+        background-color: var(--secondary-color);
+    }
 
     @include screen-1260 {
         padding: 18px 10px;
