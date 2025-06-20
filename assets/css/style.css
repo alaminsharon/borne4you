@@ -1337,6 +1337,19 @@ h6 {
   @media (max-width: 1199.98px) {
     .al-selection-card {
       gap: 10px; } }
+  @media (max-width: 767.98px) {
+    .al-selection-card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+      align-items: start !important;
+      -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+      justify-content: start !important;
+      gap: 20px; } }
 
 .al-selection-card-box {
   padding: 103px 128px;
@@ -1345,6 +1358,9 @@ h6 {
   @media (max-width: 991.98px) {
     .al-selection-card-box {
       padding: 90px 80px; } }
+  @media (max-width: 767.98px) {
+    .al-selection-card-box {
+      width: 100%; } }
 
 .al-selection-card-title h6 {
   font-weight: 600;
